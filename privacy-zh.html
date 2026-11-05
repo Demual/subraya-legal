@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Subraya</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1a16; background: #fffaf4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ede3d8; background: #18130f; }
+    td, th { border-color: #3d3229 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8c5a2e; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #e9bd8f; } a { color: #e9bd8f; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #8c5a2e; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p class="fecha">应用 <strong>Subraya</strong>（<code>com.jrsoft.lectorpdf</code>）· 最后更新：2026年11月4日</p>
+
+<div class="clave">
+<p><strong>一句话概括：</strong>Subraya 在你的手机内打开、阅读和编辑你的 PDF。没有账号，也没有自己的服务器；除非你自己分享或打印，你的文档、批注和签名都不会离开手机。除此之外，发送出去的只有 Google 的库为投放广告而收集的技术数据和广告数据，详见下文。</p>
+</div>
+
+<h2>数据控制者</h2>
+<p>数据控制者是 Subraya 应用的开发者 <strong>JR Soft</strong>（<strong>Javier Román Sáez</strong> 的商号）。联系方式：<strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>。</p>
+
+<h2>本应用不会做的事</h2>
+<ul>
+  <li>本应用没有注册、账号、用户名或密码。绝不会要求你提供邮箱、电话、姓名或位置。</li>
+  <li><strong>不会上传你的文档。</strong>你打开的 PDF、你添加的批注、你填写的表单和你的签名都在手机上处理和保存。本应用没有自己的服务器。</li>
+  <li>本应用不包含自有的分析或崩溃报告工具（没有 Google Analytics，没有 Firebase Analytics，也没有 Crashlytics）。Google 的库确实会发送其技术数据，详见下文。</li>
+  <li>我们不会出售或出租你的数据。为了展示和衡量广告，Google 的广告 SDK（AdMob）会收集设备标识符，详见本政策。美国的一些隐私法律可能会将此视为“出售”或“共享”个人数据（见“<a href="#eeuu">美国居民</a>”）。</li>
+  <li>不申请访问你的文件或全部存储空间的权限，也不申请相机、通讯录或位置权限。PDF 通过 Android 的文件选择器或其他应用中的“打开方式”打开，应用只能读取你选择的文件。</li>
+  <li>本应用的数据不会包含在保存到 Google 云端的 Android 备份中。</li>
+</ul>
+
+<h2>权限</h2>
+<ul>
+  <li><strong>互联网</strong>、<strong>网络状态</strong>和<strong>广告 ID</strong>（<code>AD_ID</code> 以及 Android 广告服务的相关权限），供广告和 Google 的库使用（见下文）。这些库还会添加其后台任务所需的技术权限（<code>WAKE_LOCK</code> 和 <code>FOREGROUND_SERVICE</code>）。</li>
+  <li>除此之外没有其他权限：没有存储、相机、位置或通讯录权限。打开和保存 PDF 时，Android 只允许应用访问你选择的文件或文件夹。</li>
+</ul>
+
+<h2>只保留在你手机上的数据</h2>
+<p>以下信息保存在应用的私有存储空间中。卸载应用、在 Android 设置中清除应用数据，或使用<em>设置 → 删除我的全部数据</em>后，这些信息就会消失；后者还会放弃应用此前保留的 PDF 访问权限。你的 PDF 不会被删除：它们仍在原来的位置。</p>
+<ul>
+  <li>最近文件和收藏的<strong>文档库</strong>：每个 PDF 的名称、在手机上的地址（Android 的 <code>content://</code> 地址）、大小、页数、日期、你上次阅读的页面、是否已收藏，以及你的书签。</li>
+  <li>每个文档第一页的<strong>缩略图</strong>，用于列表显示。</li>
+  <li>你保存的手写<strong>签名</strong>，以笔画形式保存。</li>
+  <li>你的设置：语言、主题、阅读模式、保持屏幕常亮及其他选项，以及几个用于判断何时请你评分的使用计数。</li>
+  <li>你打开的 PDF 的<strong>临时副本</strong>，保存在应用的临时存储（缓存）中，因为 PDF 引擎需要在那里读取它们：会保留最近 4 个文档的副本，总计最多 600 MB，Android 可随时清除。你分享或打印的副本也在那里准备。</li>
+  <li>在你覆盖保存原文件期间，该 PDF 的一份<strong>安全副本</strong>，保存完成后即删除。如果应用在中途关闭，会保留这份副本，以便提议把原文件恢复原样。</li>
+  <li>曾导致应用<strong>卡死</strong>的 PDF 列表，以免在未询问你的情况下再次自动打开它们。</li>
+  <li>重新打开文档库中每个 PDF 的<strong>权限</strong>：在 Android 允许的情况下，应用会保留你授予它的该文件访问权限。当你从文档库中移除该 PDF 或使用<em>删除我的全部数据</em>时，应用会放弃这一权限。</li>
+</ul>
+<p><strong>你的批注、表单和签名都写在 PDF 里。</strong>你高亮、加下划线、批注或绘制的内容，你填写的表单以及你添加的签名，会在保存时写入 PDF 文件本身，覆盖原文件或保存为新的 PDF，由你选择。它们随该文件一起流转：收到文件的人都能看到。</p>
+<p><strong>备份和更换手机。</strong>本应用的数据已关闭 Android 云端备份（即你的 Google 账号中的备份）：不会上传任何数据。Android 会在你的账号中保存你曾安装的应用列表，以便重新安装，但该列表由 Google 管理，不包含本应用的数据。</p>
+<p>如果你在设置新手机时直接从旧手机复制数据（无论是否使用数据线），本应用的数据可能会转移到新手机。这次转移由你发起，由 Android 使用其自带工具或手机厂商的工具完成，并适用它们自己的条款。根据 Android 的文档，数据直接从一部手机传到另一部手机，不经过服务器。无论如何都不会经过我们的服务器：JR Soft 不会收到任何数据。</p>
+<p>能否转移取决于 Android 版本和手机厂商（Android 8 或更早版本不会转移），因此我们无法保证。如果你在没有旧手机的情况下，通过 Google 账号的备份设置新手机，本应用的数据不会恢复，因为它们不在该备份中。</p>
+<p>只在旧手机上有用的内容不会转移，例如临时存储，或你对广告所做的选择：在新手机上，应用会再次询问你。</p>
+
+<h2>由你决定分享的内容</h2>
+<ul>
+  <li><strong>分享。</strong>只有当你在 Android 界面中选择某个应用进行分享时，PDF 才会离开手机，其中包含你批注、填写或签署的内容。如果你用“设置密码”保护它，PDF 会使用 AES-256 加密：一旦忘记密码，谁都无法打开，我们也不例外。</li>
+  <li><strong>保存。</strong>你保存的内容会覆盖原文件或保存为新的 PDF，位置由你通过 Android 界面选择；“拆分”会把生成的 PDF 放到你选择的文件夹中。如果该位置与云端同步（例如 Google 云端硬盘），同步由你选择的服务按其条款进行。</li>
+  <li><strong>图片转 PDF。</strong>应用只会在当时读取你在 Android 选择器中选中的图片，用来生成 PDF。它不会保留再次读取这些图片的权限。</li>
+  <li><strong>打印。</strong>PDF 会发送到 Android 的打印服务和你选择的打印机，并适用它们的条款。应用为打印准备的副本会在打印结束后删除。</li>
+  <li><strong>PDF 中的链接。</strong>如果你点按 PDF 中的网页链接或邮件链接，应用会先向你显示完整地址，只有在你确认后，才会在你的浏览器或邮件应用中打开。</li>
+  <li><strong>分享这款应用。</strong>通过你选择的应用分享一段文字，其中包含 Subraya 在 Google Play 上的链接。该链接带有一个参数，只表明它来自“分享这款应用”，不包含你的任何数据。</li>
+  <li><strong>剪贴板。</strong>只有在你要求时，应用才会把文字复制到剪贴板。</li>
+  <li><strong>联系我们。</strong>会打开你的邮件应用，并生成一封发给我们、主题为“Subraya”的邮件。只有你亲自发送才会发出。如果你发给我们，我们会收到你的邮箱地址和你写的内容；我们仅将其用于回复你和解决你反映的问题，并会在问题解决后删除这封邮件，最迟在收到后一年内删除。</li>
+</ul>
+
+<h2>会离开手机的数据</h2>
+
+<h3>广告：Google AdMob</h3>
+<p>本应用免费，依靠 Google AdMob 的低调广告维持运营。广告仅出现在文档库中（底部一个横幅广告，列表中的文档之间偶尔出现一个广告）：绝不会在你阅读、批注、填写或签署 PDF 时出现，也没有全屏广告。广告请求中不包含你文档中的任何内容。</p>
+<p>与所有使用 AdMob 的应用一样，Google 的 SDK 会收集 Android <strong>广告 ID</strong>（你可以在 <em>Android 设置 → Google → 广告</em>中重置或删除）、应用组 ID（<em>app set ID</em>）、你的 IP 地址（可据此推断大致位置）、与应用和广告的互动以及诊断数据。Google 根据其自身政策，将这些数据用于投放和衡量广告、统计分析和防范欺诈。</p>
+<p>在欧洲经济区、英国和瑞士，本应用会在投放个性化广告之前显示 Google 的同意表单。你可以随时在<em>设置 → 广告隐私选项</em>中更改你的选择。如果拒绝，你会看到非个性化广告（如果你也不同意使用存储空间，则会看到不使用标识符的受限广告），应用的功能完全不受影响。</p>
+<p>广告同意消息由 Google 显示，其文字对 Google 的所有广告合作伙伴都相同，因此会提到精确地理位置。据 Google 称，其广告 SDK 只使用根据 IP 地址推断出的大致位置，而本应用不会向它提供 GPS 位置。你可以在“管理选项”中拒绝这种使用。</p>
+<p>Google 如何使用来自采用其服务的应用的信息：<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>。</p>
+
+<h3>评分和 Google Play</h3>
+<p>在你顺利使用应用之后，应用偶尔可能会通过 Google Play 的官方窗口请你评分，该窗口由 Google 管理。“给应用评分”和“JR Soft 的更多应用”会打开 Google Play。为了只向你显示你所在国家/地区可用的应用，“JR Soft 的更多应用”会在手机上读取 SIM 卡所属国家或系统地区；该信息不会离开手机。它指向 Google Play 的链接带有一个参数，只表明链接来自 Subraya，不包含你的任何数据。</p>
+
+<h3>IP 地址</h3>
+<p>与任何联网的应用一样，上述 Google 服务在连接时会收到你的 IP 地址。本应用没有自己的服务器，因此不保存任何形式的日志。</p>
+
+<h2>涉及的第三方</h2>
+<table>
+  <tr><th>服务</th><th>用途</th><th>其隐私政策</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>广告和同意表单</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>评分及指向其他应用的链接</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>你选择的应用和服务</td>
+    <td>仅在你分享、保存、打印、打开链接或写信给我们时（邮件、云端、打印机、浏览器）</td>
+    <td>各自的政策</td>
+  </tr>
+</table>
+
+<h2>国际数据传输</h2>
+<p>Google LLC 可能会在美国和其他国家/地区处理这些数据。Google 已加入<strong>欧盟-美国数据隐私框架</strong>（欧盟委员会于2023年7月10日作出的充分性决定），并在需要时采用<strong>标准合同条款</strong>：<a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>。联系邮箱同样是 Google 的服务（Gmail）。</p>
+
+<h2>法律依据和保留期限</h2>
+<p><strong>法律依据。</strong>在你手机上处理的内容不会到达 JR Soft。对于确实离开手机的数据：(1) 在欧洲经济区、英国和瑞士的个性化广告，以及出于广告目的使用设备存储空间：依据你的<strong>同意</strong>，你在 Google 的表单中给予或拒绝同意，并可在<em>设置 → 广告隐私选项</em>中撤回（GDPR 第 6 条第 1 款 (a) 项和 LSSI-CE 第 22 条第 2 款）；(2) 非个性化广告及其效果衡量和防范欺诈：依据为免费应用提供资金并保护其免受欺诈的<strong>正当利益</strong>（GDPR 第 6 条第 1 款 (f) 项）；(3) 如果你写信给我们（例如通过“联系我们”）：依据回复你并解决你所反映问题的<strong>正当利益</strong>（GDPR 第 6 条第 1 款 (f) 项）。Google 作为<strong>独立的数据控制者</strong>，按其自身政策处理 AdMob 的数据。</p>
+<p>保存在手机上的数据会一直保留，直到你删除它们、卸载应用或清除应用数据；临时副本会保留到应用用其他副本替换它们，或 Android 清除临时存储为止。除你发给我们的消息（问题解决后即删除，最迟在收到后一年内删除）外，本应用不会在你的手机之外保留任何数据；Google 按其政策保留其收集的数据。</p>
+
+<h2>你的权利</h2>
+<p>如果你居住在欧盟，《通用数据保护条例》（GDPR）和西班牙第 3/2018 号组织法（LOPDGDD）赋予你访问、更正、删除、限制处理、数据可携和反对的权利。实际上，除你发给我们的消息外（关于这些消息，请写信到联系邮箱），本应用不会在你的手机之外保存你的任何数据；AdMob 的数据由 Google 处理，你可以向 Google 行使你的权利（<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>）。对于你手机上的内容：</p>
+<ul>
+  <li><strong>访问和数据可携：</strong>你的 PDF 是你自己的文件，里面包含你的批注和签名：你可以随意分享或保存到任何地方。文档库会向你显示应用记住的有关这些文件的信息。</li>
+  <li><strong>更正：</strong>在应用中修改你的批注、书签、收藏和设置。</li>
+  <li><strong>删除：</strong>用“从最近中移除”移除 PDF，用“删除此签名”删除签名，或使用<em>设置 → 删除我的全部数据</em>；也可以卸载应用。无需向任何人提出申请。</li>
+  <li><strong>反对和撤回同意：</strong>在<em>设置 → 广告隐私选项</em>中更改你的广告选择。</li>
+</ul>
+<p>你也可以写信到上述联系邮箱，或向<a href="https://www.aepd.es">西班牙数据保护局（AEPD）</a>或你所在国家的数据保护机构投诉。</p>
+
+<h2 id="eeuu">美国居民</h2>
+<p>如果你居住在有自己隐私法律的美国州（例如加利福尼亚州、科罗拉多州、康涅狄格州、得克萨斯州或弗吉尼亚州），你有权要求不出售你的个人数据，也不将其共享用于定向广告。你可以在应用中操作：<em>设置 → 广告隐私选项</em> → “Don't sell or share my data”。此后你只会看到非个性化广告。本应用不会向任何人发送敏感数据；你的文档会留在你的手机上。为了投放广告，Google 的 SDK 会使用设备标识符和大致位置（城市级别）。如对你的数据有其他任何请求，请发送邮件至 <a href="mailto:demual@gmail.com">demual@gmail.com</a>。</p>
+
+<h2 id="brasil">巴西居民</h2>
+<p>如果你居住在巴西，《通用数据保护法》（LGPD，第 13.709/2018 号法律）赋予你以下权利：确认和访问、更正、匿名化、封存或删除、数据可携、获知你的数据与谁共享以及你可以不给予同意，以及撤回同意（第 18 条）。法律依据见“法律依据和保留期限”：个性化广告依据你的同意（第 7 条第 I 项），其他处理依据正当利益（第 7 条第 IX 项）。AdMob 的数据可能在巴西境外处理，并采用“国际数据传输”中所述的保障措施（第 33 条）。你的文档会留在你的手机上，除你发给我们的消息外，本应用不会在你的手机之外保存你的任何数据；如有任何请求，请发送邮件至 <a href="mailto:demual@gmail.com">demual@gmail.com</a>。你也可以向巴西国家数据保护局（ANPD）投诉。</p>
+
+<h2>未成年人</h2>
+<p>Subraya 不面向 16 岁以下的未成年人，我们也不会故意收集他们的数据。广告仅限于适合青少年的内容（T 级）。如果你未满 16 岁并居住在欧洲经济区、英国或瑞士，请不要在 Google 的表单中接受个性化广告（或在<em>设置 → 广告隐私选项</em>中撤回同意）：应用的功能不受影响。AdMob 发送的技术数据即上文所述的数据。</p>
+
+<h2>本政策的变更</h2>
+<p>如果本政策发生实质性变更，新版本将在同一地址发布，并注明新的更新日期。</p>
+
+<h2>开源许可</h2>
+<p>Subraya 使用了 PDFium、PdfBox 和 Flutter 等开源库。许可列表见 <a href="licencias.html">licencias.html</a>，完整列表可在应用的<em>设置 → 开源许可</em>中查看。</p>
+
+<footer>
+<p>Subraya · JR Soft（Javier Román Sáez）· <code>com.jrsoft.lectorpdf</code> · 联系方式：<strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">其他语言</a></p>
+</footer>
+
+</body>
+</html>

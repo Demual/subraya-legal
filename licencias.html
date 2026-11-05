@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licencias de código abierto · Subraya</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1a16; background: #fffaf4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ede3d8; background: #18130f; }
+    td, th { border-color: #3d3229 !important; }
+    a { color: #e9bd8f; }
+    pre { background: #241d17 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8c5a2e; }
+  @media (prefers-color-scheme: dark) { h2 { color: #e9bd8f; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+  pre { white-space: pre-wrap; font-size: .8rem; background: #f5ede4; padding: .8rem 1rem; border-radius: 8px; overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<h1>Licencias de código abierto</h1>
+<p class="fecha">Open-source licences · <strong>Subraya</strong> (<code>com.jrsoft.lectorpdf</code>) · 4 de noviembre de 2026</p>
+
+<p>Subraya está hecha con estas bibliotecas de código abierto, a cuyos autores
+agradecemos su trabajo. La lista completa, con todos los paquetes de Flutter y
+Dart y el texto entero de cada licencia, está dentro de la aplicación:
+<em>Ajustes → Licencias de código abierto</em>.</p>
+<p lang="en"><em>Subraya is built with these open-source libraries. The full list,
+with every Flutter and Dart package and the complete text of every licence, is
+inside the app: Settings → Open source licenses.</em></p>
+
+<h2>El motor de PDF</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Para qué</th><th>Licencia</th></tr>
+  <tr><td><a href="https://pdfium.googlesource.com/pdfium/">PDFium</a> (binario de <a href="https://github.com/bblanchon/pdfium-binaries">pdfium-binaries</a>, chromium/8125)</td><td>Abrir, pintar, buscar, anotar, rellenar y guardar los PDF</td><td>BSD de 3 cláusulas y Apache 2.0</td></tr>
+  <tr><td><a href="https://pub.dev/packages/pdfrx">pdfrx</a>, pdfrx_engine, pdfium_dart, pdfium_flutter</td><td>PDFium en Flutter</td><td>MIT</td></tr>
+  <tr><td><a href="https://github.com/TomRoush/PdfBox-Android">PdfBox-Android</a> (Apache PDFBox)</td><td>Poner y quitar contraseña, comprimir, unir PDF e imágenes a PDF</td><td>Apache 2.0 (con sus avisos NOTICE, abajo)</td></tr>
+  <tr><td>Adobe Glyph List e ITC Zapf Dingbats Glyph List</td><td>Nombres de los caracteres, dentro de PdfBox</td><td>BSD de 3 cláusulas de Adobe (abajo)</td></tr>
+  <tr><td>Unicode Character Database (<code>Scripts.txt</code>)</td><td>Escrituras de los caracteres, dentro de PdfBox</td><td>Unicode License v3 (abajo)</td></tr>
+  <tr><td><a href="https://www.bouncycastle.org">Bouncy Castle</a></td><td>Cifrado, dentro de PdfBox</td><td>MIT</td></tr>
+</table>
+
+<h2>Dentro del binario de PDFium</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Licencia</th></tr>
+  <tr><td>Abseil</td><td>Apache 2.0</td></tr>
+  <tr><td>Anti-Grain Geometry 2.3</td><td>Licencia de Anti-Grain Geometry (permisiva)</td></tr>
+  <tr><td>Catapult</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>cpu_features</td><td>Apache 2.0</td></tr>
+  <tr><td>Dragonbox</td><td>Apache 2.0 con excepciones de LLVM o Boost Software License 1.0</td></tr>
+  <tr><td>fast_float</td><td>MIT</td></tr>
+  <tr><td><a href="https://freetype.org">FreeType</a></td><td>FreeType License</td></tr>
+  <tr><td><a href="https://harfbuzz.github.io">HarfBuzz</a></td><td>«Old MIT»</td></tr>
+  <tr><td>Highway</td><td>Apache 2.0</td></tr>
+  <tr><td>ICU</td><td>Unicode License v3</td></tr>
+  <tr><td>Little CMS</td><td>MIT</td></tr>
+  <tr><td>libjpeg-turbo</td><td>Licencia de IJG y BSD de 3 cláusulas (zlib en parte del código)</td></tr>
+  <tr><td>OpenJPEG</td><td>BSD de 2 cláusulas</td></tr>
+  <tr><td>libpng</td><td>PNG Reference Library License v2</td></tr>
+  <tr><td>libunwind y LLVM libc</td><td>Apache 2.0 con excepciones de LLVM</td></tr>
+  <tr><td>simdutf</td><td>MIT</td></tr>
+  <tr><td>zlib</td><td>Licencia de zlib</td></tr>
+</table>
+<p>Los avisos de todas ellas son los de la carpeta <code>licenses/</code> del binario de PDFium que usa la aplicación, y están completos en <em>Ajustes → Licencias de código abierto</em>.</p>
+
+<h2>La aplicación</h2>
+<table>
+  <tr><th>Biblioteca</th><th>Licencia</th></tr>
+  <tr><td><a href="https://flutter.dev">Flutter</a> y Dart</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>flutter_riverpod</td><td>MIT</td></tr>
+  <tr><td>go_router, url_launcher, shared_preferences, path_provider</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>intl, path, ffi</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>clock</td><td>Apache 2.0</td></tr>
+  <tr><td>drift, drift_flutter, sqlite3</td><td>MIT</td></tr>
+  <tr><td><a href="https://www.sqlite.org">SQLite</a></td><td>Dominio público</td></tr>
+  <tr><td>package_info_plus</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>in_app_review</td><td>MIT</td></tr>
+  <tr><td>google_mobile_ads (el complemento de Flutter)</td><td>Apache 2.0</td></tr>
+  <tr><td>firebase_core, firebase_remote_config (los complementos)</td><td>BSD de 3 cláusulas</td></tr>
+  <tr><td>AndroidX (Jetpack)</td><td>Apache 2.0</td></tr>
+  <tr><td>Biblioteca estándar de Kotlin</td><td>Apache 2.0</td></tr>
+</table>
+<p>Esta tabla recoge las bibliotecas que usa directamente la aplicación. Las que
+estas usan a su vez, con sus licencias, salen también en <em>Ajustes → Licencias
+de código abierto</em>.</p>
+
+<h2>Avisos de copyright</h2>
+<ul>
+  <li>PDFium: Copyright 2014 The PDFium Authors.</li>
+  <li>FreeType: Portions of this software are copyright © The FreeType Project (www.freetype.org). All rights reserved.</li>
+  <li>libjpeg-turbo: This software is based in part on the work of the Independent JPEG Group.</li>
+  <li>PdfBox-Android: Copyright Tom Roush y colaboradores.</li>
+  <li>Bouncy Castle: Copyright (c) 2000-2025 The Legion of the Bouncy Castle Inc.</li>
+  <li>AndroidX: Copyright The Android Open Source Project.</li>
+  <li>Biblioteca estándar de Kotlin: Copyright JetBrains s.r.o. y los colaboradores del lenguaje Kotlin.</li>
+</ul>
+<h2>NOTICE de PdfBox-Android</h2>
+<pre>Apache PDFBox
+Copyright 2014 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Based on source code originally developed in the PDFBox and
+FontBox projects.
+
+Copyright (c) 2002-2007, www.pdfbox.org
+
+Based on source code originally developed in the PaDaF project.
+Copyright (c) 2010 Atos Worldline SAS
+
+Includes the Adobe Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+
+Includes the Zapf Dingbats Glyph List
+Copyright 2002, 2010 Adobe Systems Incorporated.
+
+Includes the Script Property (Scripts-10.0.0.txt)
+Copyright 2017 Unicode, Inc.</pre>
+<h2>NOTICE de Apache PDFBox</h2>
+<pre>Apache PDFBox
+Copyright 2014 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Based on source code originally developed in the PDFBox and
+FontBox projects.
+
+Copyright (c) 2002-2007, www.pdfbox.org
+
+Based on source code originally developed in the PaDaF project.
+Copyright (c) 2010 Atos Worldline SAS
+
+Includes the Adobe Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+
+Includes the Zapf Dingbats Glyph List
+Copyright 2002, 2010 Adobe Systems Incorporated.
+
+Includes OSXAdapter
+Copyright (C) 2003-2007 Apple, Inc., All Rights Reserved</pre>
+<h2>Adobe Glyph List</h2>
+<pre>Adobe Glyph List and ITC Zapf Dingbats Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+Copyright 2002, 2010 Adobe Systems Incorporated.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or
+without modification, are permitted provided that the
+following conditions are met:
+
+Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.
+
+Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+Neither the name of Adobe Systems Incorporated nor the names
+of its contributors may be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+<h2>Unicode License v3</h2>
+<p><code>Scripts-10.0.0.txt</code>: © 2017 Unicode®, Inc.</p>
+<pre>UNICODE LICENSE V3
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright © 1991-2026 Unicode, Inc.
+
+NOTICE TO USER: Carefully read the following legal agreement. BY
+DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of data files and any associated documentation (the &quot;Data Files&quot;) or
+software and any associated documentation (the &quot;Software&quot;) to deal in the
+Data Files or Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, and/or sell
+copies of the Data Files or Software, and to permit persons to whom the
+Data Files or Software are furnished to do so, provided that either (a)
+this copyright and permission notice appear with all copies of the Data
+Files or Software, or (b) this copyright and permission notice appear in
+associated Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+THIRD PARTY RIGHTS.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall
+not be used in advertising or otherwise to promote the sale, use or other
+dealings in these Data Files or Software without prior written
+authorization of the copyright holder.</pre>
+<h2>Servicios de Google (no son de código abierto)</h2>
+<p>Los <strong>servicios de Google Play</strong> y el <strong>SDK de Google Mobile Ads</strong>
+(con el mensaje de consentimiento de Google) se usan según las condiciones de Google. Lo que hacen con tus datos está en la
+<a href="privacidad-es.html">política de privacidad</a>.</p>
+
+<footer>
+<p>Subraya · JR Soft (Javier Román Sáez) · <a href="index.html">Documentos legales</a> ·
+<a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik politikası · Subraya</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1a16; background: #fffaf4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ede3d8; background: #18130f; }
+    td, th { border-color: #3d3229 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8c5a2e; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #e9bd8f; } a { color: #e9bd8f; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #8c5a2e; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Gizlilik politikası</h1>
+<p class="fecha"><strong>Subraya</strong> uygulaması (<code>com.jrsoft.lectorpdf</code>) · Son güncelleme: 4 Kasım 2026</p>
+
+<div class="clave">
+<p><strong>Tek cümleyle:</strong> Subraya PDF’lerini telefonunun içinde açar, okur ve düzenler. Hesap da kendi sunucumuz da yoktur; belgelerin, notların ve imzaların, sen paylaşmadıkça ya da yazdırmadıkça telefondan çıkmaz. Bunun dışında yalnızca Google kütüphanelerinin reklam göstermek için topladığı, aşağıda açıklanan teknik ve reklamla ilgili veriler dışarı çıkar.</p>
+</div>
+
+<h2>Sorumlu kim</h2>
+<p>Veri sorumlusu, Subraya uygulamasının geliştiricisi <strong>Javier Román Sáez</strong>’in ticari adı olan <strong>JR Soft</strong>’tur. <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> adresinden iletişime geçebilirsin.</p>
+
+<h2>Bu uygulamanın YAPMADIKLARI</h2>
+<ul>
+  <li>Uygulamada kayıt, hesap, kullanıcı adı ya da şifre yoktur. Senden asla e-posta, telefon numarası, ad ya da konum istenmez.</li>
+  <li><strong>Belgelerini hiçbir yere yüklemez.</strong> Açtığın PDF’ler, eklediğin notlar, doldurduğun formlar ve imzaların telefonunda işlenir ve saklanır. Bu uygulamanın kendi sunucuları yoktur.</li>
+  <li>Uygulama, kendine ait analiz ya da çökme raporlama araçları içermez (ne Google Analytics ne Firebase Analytics ne de Crashlytics). Google kütüphaneleri ise aşağıda açıklanan kendi teknik verilerini gönderir.</li>
+  <li>Verilerini satmayız ve kiralamayız. Reklamları göstermek ve ölçmek için Google’ın reklam SDK’sı (AdMob), bu politikada açıklandığı gibi cihaz tanımlayıcılarını toplar. ABD’deki bazı gizlilik yasaları bunu kişisel verilerin “satışı” veya “paylaşılması” olarak değerlendirebilir (bkz. “<a href="#eeuu">ABD’de yaşayanlar</a>”).</li>
+  <li>Dosyalarına ya da tüm depolama alanına erişmek, kamerayı, kişilerini ya da konumunu kullanmak için izin istemez. PDF’ler Android’in dosya seçicisiyle ya da başka bir uygulamadaki “Şununla aç” ile açılır ve uygulama yalnızca senin seçtiğin dosyaları okuyabilir.</li>
+  <li>Uygulamanın verileri, Android’in Google bulutundaki yedeğine dahil edilmez.</li>
+</ul>
+
+<h2>İzinler</h2>
+<ul>
+  <li><strong>İnternet</strong>, <strong>ağ durumu</strong> ve <strong>reklam kimliği</strong> (<code>AD_ID</code> ve Android reklam hizmetlerinin izinleri); bunlar reklamlar ve Google kütüphaneleri için gereklidir (aşağıya bak). Bu kütüphaneler, arka plan görevleri için teknik izinler de ekler (<code>WAKE_LOCK</code> ve <code>FOREGROUND_SERVICE</code>).</li>
+  <li>Başka izin yoktur: ne depolama ne kamera ne konum ne de kişiler. Bir PDF’yi açmak ve kaydetmek için Android, uygulamaya yalnızca senin seçtiğin dosyaya ya da klasöre erişim verir.</li>
+</ul>
+
+<h2>Yalnızca telefonunda kalan veriler</h2>
+<p>Bu bilgiler uygulamanın özel depolama alanında saklanır. Uygulamayı kaldırırsan, verilerini Android ayarlarından silersen ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullanırsan kaybolur; bu seçenek ayrıca uygulamanın sakladığı PDF erişim izinlerini de bırakır. PDF’lerin silinmez: oldukları yerde kalırlar.</p>
+<ul>
+  <li>Son açılanlar ve favorilerden oluşan <strong>kitaplık</strong>: her PDF’nin adı, telefondaki adresi (Android’in <code>content://</code> adresi), boyutu, sayfa sayısı, tarihleri, en son okuduğun sayfa, favori olup olmadığı ve yer imlerin.</li>
+  <li>Listede göstermek için her belgenin ilk sayfasının bir <strong>küçük resmi</strong>.</li>
+  <li>Kaydettiğin çizilmiş <strong>imzalar</strong>, çizgiler hâlinde.</li>
+  <li>Ayarların: dil, tema, okuma modu, “Okurken ekranı açık tut” ve diğer seçenekler; ayrıca senden ne zaman değerlendirme isteneceğini bilmek için birkaç kullanım sayacı.</li>
+  <li>Açtığın PDF’lerin uygulamanın geçici belleğindeki (önbellek) <strong>geçici kopyaları</strong>; çünkü PDF motorunun onları orada okuması gerekir: son 4 belgenin kopyaları, toplamda en fazla 600 MB olacak şekilde saklanır ve Android bunları istediği zaman silebilir. Paylaştığın ya da yazdırdığın kopyalar da orada hazırlanır.</li>
+  <li>Orijinalin üzerine kaydederken o PDF’nin bir <strong>güvenlik kopyası</strong>; kayıt bitince silinir. Uygulama yarıda kapanırsa, orijinali eski hâline getirmeyi önerebilmek için saklanır.</li>
+  <li>Uygulamayı <strong>donduran</strong> PDF’lerin listesi; sana sormadan kendiliğinden yeniden açılmamaları için.</li>
+  <li>Kitaplıktaki her PDF’yi <strong>yeniden açma izni</strong>: Android izin verdiğinde uygulama, o dosyaya verdiğin erişimi saklar. PDF’yi kitaplıktan çıkardığında ve <em>Tüm verilerimi sil</em> ile bu izni bırakır.</li>
+</ul>
+<p><strong>Notların, formların ve imzaların PDF’nin içine yazılır.</strong> Vurguladığın, altını çizdiğin, not eklediğin ya da çizdiğin şeyler, doldurduğun formlar ve eklediğin imzalar, kaydettiğinde PDF dosyasının kendisine yazılır; orijinalin üzerine ya da yeni bir PDF’ye, nasıl seçersen. O dosyayla birlikte giderler: dosyayı alan kişi onları görür.</p>
+<p><strong>Yedekler ve telefon değiştirme.</strong> Android’in buluta yedeklemesi (Google hesabındaki) bu uygulamanın verileri için kapalıdır: hiçbiri yüklenmez. Android, yeniden yükleyebilmek için yüklü uygulamalarının listesini hesabında saklar; ancak bu listeyi Google yönetir ve listede uygulamanın verileri yoktur.</p>
+<p>Yeni bir telefonu kurarken verilerini kabloyla ya da kablosuz olarak doğrudan eski telefondan kopyalarsan uygulamanın verileri yeni telefona geçebilir. Bu aktarımı sen istersin; Android de kendi aracıyla ya da telefon üreticisinin aracıyla, onların koşullarıyla yapar. Android belgelerine göre veriler sunuculardan geçmeden bir telefondan diğerine gider. Hiçbir durumda bizim sunucularımızdan geçmez: JR Soft hiçbir şey almaz.</p>
+<p>Aktarımın yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır (Android 8 ve öncesinde yapılmaz), bu yüzden bunu garanti edemeyiz. Yeni telefonu eski telefon olmadan Google hesabının yedeğinden kurarsan bu uygulamanın verileri geri gelmez, çünkü o yedekte yoktur.</p>
+<p>Yalnızca eski telefonda işe yarayan şeyler aktarılmaz; örneğin geçici bellek ya da reklamlarla ilgili tercihin: uygulama bunu yeni telefonda sana yeniden sorar.</p>
+
+<h2>Paylaşmaya senin karar verdiklerin</h2>
+<ul>
+  <li><strong>Paylaşma.</strong> Bir PDF yalnızca sen paylaştığında, Android ekranında seçtiğin uygulamayla telefondan çıkar ve içinde not olarak eklediğin, doldurduğun ya da imzaladığın her şey bulunur. “Şifre koy” ile korursan PDF, AES-256 ile şifrelenir: şifreyi unutursan onu kimse açamaz, biz bile.</li>
+  <li><strong>Kaydetme.</strong> Kaydettiğin şey orijinalin üzerine ya da yeni bir PDF’ye, Android ekranında seçtiğin yere gider; “Böl” oluşturduğu PDF’leri seçtiğin klasöre koyar. Bu yer bir bulutla (örneğin Google Drive) eşitleniyorsa bunu, seçtiğin hizmet kendi koşullarıyla yapar.</li>
+  <li><strong>Görüntülerden PDF.</strong> Uygulama, PDF’yi oluşturmak için yalnızca o anda Android seçicisinde seçtiğin görüntüleri okur. Onları yeniden okuma izni saklamaz.</li>
+  <li><strong>Yazdırma.</strong> PDF, Android’in yazdırma hizmetine ve seçtiğin yazıcıya, onların koşullarıyla gönderilir. Uygulamanın yazdırma için hazırladığı kopya iş bitince silinir.</li>
+  <li><strong>PDF’deki bağlantılar.</strong> Bir PDF’nin içindeki bir web ya da e-posta bağlantısına dokunursan uygulama sana önce tam adresi gösterir ve yalnızca onaylarsan tarayıcında ya da e-posta uygulamanda açar.</li>
+  <li><strong>Uygulamayı paylaş.</strong> Seçtiğin uygulamayla, Subraya’nın Google Play bağlantısını içeren bir metin paylaşır. Bağlantıda yalnızca “Uygulamayı paylaş”den geldiğini belirten bir parametre bulunur; seninle ilgili hiçbir veri yoktur.</li>
+  <li><strong>Pano.</strong> Uygulama metni panoya yalnızca sen istediğinde kopyalar.</li>
+  <li><strong>Bize yaz.</strong> E-posta uygulamanı, konusu “Subraya” olan ve bize gönderilecek bir mesajla açar. Yalnızca sen gönderirsen gönderilir. Mesajı bize gönderirsen e-posta adresini ve yazdıklarını alırız; bunları yalnızca sana yanıt vermek ve bildirdiğin konuyu çözmek için kullanırız ve mesajı konu çözüldüğünde, en geç de aldıktan bir yıl sonra sileriz.</li>
+</ul>
+
+<h2>Telefondan çıkan veriler</h2>
+
+<h3>Reklamlar: Google AdMob</h3>
+<p>Uygulama ücretsizdir ve yalnızca kitaplıkta görünen (altta bir banner ve ara sıra listedeki belgelerin arasında bir reklam), göze batmayan Google AdMob reklamlarıyla ayakta durur: bir PDF’yi okurken, not eklerken, doldururken ya da imzalarken asla, tam ekranda da asla. Reklam isteklerinde belgelerinden hiçbir şey yer almaz.</p>
+<p>AdMob kullanan her uygulamada olduğu gibi Google SDK’sı; Android <strong>reklam kimliğini</strong> (bunu <em>Android Ayarları → Google → Reklamlar</em> bölümünden sıfırlayabilir ya da silebilirsin), uygulama grubu kimliğini (<em>app set ID</em>), IP adresini (bundan yaklaşık bir konum çıkarılır), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini toplar. Google bunları kendi politikasına göre reklam göstermek ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu gösterir. Tercihini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin. Reddedersen kişiselleştirilmemiş reklamlar (depolama alanının kullanılmasını da kabul etmezsen kimlik kullanılmayan sınırlı reklamlar) görürsün ve uygulama tamamen aynı şekilde çalışır.</p>
+<p>Reklam onay mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Google’a göre reklam SDK’sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır ve bu uygulama ona GPS konumunu vermez. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsin.</p>
+<p>Google’ın, hizmetlerini kullanan uygulamalardaki bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h3>Değerlendirmeler ve Google Play</h3>
+<p>Uygulama, zaman zaman ve başarılı bir kullanımdan sonra, Google’ın yönettiği resmî Google Play penceresiyle senden bir değerlendirme isteyebilir. “Uygulamayı değerlendir” ve “JR Soft'un diğer uygulamaları” Google Play’i açar. Yalnızca ülkende bulunan uygulamaları göstermek için “JR Soft'un diğer uygulamaları” telefonda SIM kartın ülkesine ya da sistem bölgesine bakar; bu bilgi telefondan çıkmaz. Google Play bağlantılarında yalnızca Subraya’dan geldiklerini belirten bir parametre bulunur; seninle ilgili hiçbir veri yoktur.</p>
+
+<h3>IP adresi</h3>
+<p>İnternete bağlanan her uygulamada olduğu gibi, adı geçen Google hizmetleri bağlantı sırasında IP adresini alır. Bu uygulamanın kendi sunucuları olmadığı için hiçbir türde kayıt tutmaz.</p>
+
+<h2>İlgili üçüncü taraflar</h2>
+<table>
+  <tr><th>Hizmet</th><th>Ne için</th><th>Politikası</th></tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Reklamlar ve onay formu</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Değerlendirmeler ve diğer uygulamalara bağlantılar</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Seçtiğin uygulamalar ve hizmetler</td>
+    <td>Yalnızca bir şeyi paylaştığında, kaydettiğinde, yazdırdığında, bir bağlantı açtığında ya da bize yazdığında (e-posta, bulut, yazıcı, tarayıcı)</td>
+    <td>Her birinin kendi politikası</td>
+  </tr>
+</table>
+
+<h2>Uluslararası veri aktarımları</h2>
+<p>Google LLC bu verileri Amerika Birleşik Devletleri’nde ve başka ülkelerde işleyebilir. Google, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>’ne (Avrupa Komisyonu’nun 10 Temmuz 2023 tarihli yeterlilik kararı) katılmıştır ve gerektiğinde <strong>standart sözleşme maddelerini</strong> kullanır: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. İletişim e-postası da bir Google hizmetidir (Gmail).</p>
+
+<h2>Hukuki dayanak ve saklama</h2>
+<p><strong>Hukuki dayanak.</strong> Telefonunda işlenenler JR Soft’a ulaşmaz. Telefondan çıkanlar için: (1) AEA, Birleşik Krallık ve İsviçre’de kişiselleştirilmiş reklamlar ve cihaz depolama alanının reklam amacıyla kullanılması: Google formunda verdiğin ya da vermediğin ve <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çekebileceğin <strong>onayın</strong> (GDPR md. 6.1.a ve LSSI-CE md. 22.2); (2) kişiselleştirilmemiş reklamlar, bunların ölçümü ve dolandırıcılığın önlenmesi: ücretsiz bir uygulamayı finanse etme ve dolandırıcılığa karşı koruma konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f); (3) bize yazarsan (örneğin “Bize yaz” ile): sana yanıt verme ve bildirdiğin konuyu çözme konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f). Google, AdMob verilerini kendi politikalarıyla <strong>bağımsız veri sorumlusu</strong> olarak işler.</p>
+<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana ya da uygulamanın verilerini silene kadar kalır; geçici kopyalar ise uygulama onların yerine başkalarını koyana ya da Android geçici belleği boşaltana kadar kalır. Bu uygulama, bize gönderdiğin mesajlar dışında telefonunun dışında hiçbir veri saklamaz (bu mesajlar konu çözüldüğünde, en geç de alındıktan bir yıl sonra silinir); Google ise kendi verilerini kendi politikalarına göre saklar.</p>
+
+<h2>Hakların</h2>
+<p>Avrupa Birliği’nde yaşıyorsan GDPR ve İspanya’nın 3/2018 sayılı Organik Kanunu (LOPDGDD) sana erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarını tanır. Pratikte bu uygulama, bize gönderdiğin mesajlar dışında telefonun dışında hiçbir verini saklamaz (bunlar için iletişim adresine yaz); AdMob verilerini Google işler ve bu verilerle ilgili haklarını Google’a karşı kullanabilirsin (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Telefonunda olanlar için:</p>
+<ul>
+  <li><strong>Erişim ve taşınabilirlik:</strong> PDF’lerin, içine eklediğin notlar ve imzalarla birlikte senin kendi dosyalarındır: onları istediğin yerde paylaş ya da kaydet. Kitaplık, uygulamanın onlar hakkında hatırladıklarını sana gösterir.</li>
+  <li><strong>Düzeltme:</strong> notlarını, yer imlerini, favorilerini ve ayarlarını uygulamanın içinde değiştir.</li>
+  <li><strong>Silme:</strong> bir PDF’yi “Son açılanlardan çıkar” ile çıkar, bir imzayı “Bu imzayı sil” ile sil ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullan; uygulamayı da kaldırabilirsin. Kimseden bir şey istemene gerek yok.</li>
+  <li><strong>İtiraz ve onayın geri çekilmesi:</strong> reklam tercihini <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştir.</li>
+</ul>
+<p>İletişim adresine yazabilir ya da İspanya Veri Koruma Ajansı’na (<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>) veya kendi ülkendeki veri koruma makamına şikâyette bulunabilirsin.</p>
+
+<h2 id="eeuu">ABD’de yaşayanlar</h2>
+<p>Kendi gizlilik yasası olan bir ABD eyaletinde yaşıyorsan (örneğin California, Colorado, Connecticut, Texas veya Virginia), kişisel verilerinin satılmamasını ve hedefli reklamcılık için paylaşılmamasını isteme hakkın var. Bunu uygulamada yapabilirsin: <em>Ayarlar → Reklam gizlilik seçenekleri</em> → “Don't sell or share my data”. O andan itibaren yalnızca kişiselleştirilmemiş reklamlar görürsün. Uygulama hassas verileri kimseye göndermez; belgelerin telefonunda kalır. Reklamlar için Google SDK’sı cihaz tanımlayıcılarını ve yaklaşık bir konumu (şehir düzeyinde) kullanır. Verilerinle ilgili diğer tüm talepler için bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yaz.</p>
+
+<h2 id="brasil">Brezilya’da yaşayanlar</h2>
+<p>Brezilya’da yaşıyorsan Genel Veri Koruma Kanunu (LGPD, 13.709/2018 sayılı Kanun) sana teyit ve erişim, düzeltme, anonimleştirme, engelleme ya da silme, taşınabilirlik, verilerinin kimlerle paylaşıldığı ve onay vermeme olanağı hakkında bilgi alma ve onayı geri çekme haklarını tanır (md. 18). Hukuki dayanaklar “Hukuki dayanak ve saklama” bölümünde açıklananlardır: kişiselleştirilmiş reklamlar için onayın (md. 7, I) ve geri kalanı için meşru menfaat (md. 7, IX). AdMob verileri, “Uluslararası veri aktarımları” bölümünde açıklanan güvencelerle Brezilya dışında işlenebilir (md. 33). Belgelerin telefonunda kalır ve bu uygulama, bize gönderdiğin mesajlar dışında telefonun dışında hiçbir verini saklamaz; her türlü talep için bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yaz. Ulusal Veri Koruma Otoritesi’ne (ANPD) de şikâyette bulunabilirsin.</p>
+
+<h2>Çocuklar</h2>
+<p>Subraya 16 yaşından küçükler için tasarlanmamıştır ve onlardan bilerek veri toplamayız. Reklamlar gençlere uygun içerikle (T derecelendirmesi) sınırlıdır. 16 yaşından küçüksen ve AEA, Birleşik Krallık ya da İsviçre’de yaşıyorsan Google formunda kişiselleştirilmiş reklamları kabul etme (ya da onayını <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çek): uygulama aynı şekilde çalışır. AdMob’un gönderdiği teknik veriler yukarıda açıklananlardır.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika önemli ölçüde değişirse yeni sürüm, farklı bir güncelleme tarihiyle aynı adreste yayımlanır.</p>
+
+<h2>Açık kaynak lisansları</h2>
+<p>Subraya; PDFium, PdfBox ve Flutter gibi açık kaynaklı kütüphaneler kullanır. Lisanslarıyla birlikte liste <a href="licencias.html">licencias.html</a> sayfasında, tam hâli ise uygulamadadır: <em>Ayarlar → Açık kaynak lisansları</em>.</p>
+
+<footer>
+<p>Subraya · JR Soft (Javier Román Sáez) · <code>com.jrsoft.lectorpdf</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Diğer diller</a></p>
+</footer>
+
+</body>
+</html>
